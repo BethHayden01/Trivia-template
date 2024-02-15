@@ -57,13 +57,11 @@ function showQuestion(){
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
-        const button = document.createElement()
+        const button = document.createElement("button")
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButton.appendChild(button);
-
-    });
-        
+    });      
 }
 
 startQuiz();
